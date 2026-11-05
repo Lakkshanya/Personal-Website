@@ -11,7 +11,7 @@ import Hobbies from './components/Hobbies';
 import Contact from './components/Contact';
 import { CONTACT_CONFIG } from './data/portfolioData';
 import { Github, Linkedin, WhatsApp } from './components/icons';
-import { Mail, Heart, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 function App() {
   const [darkMode, setDarkMode] = useState(() => {
@@ -126,14 +126,9 @@ function App() {
             </div>
           </div>
 
-          <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500 dark:text-slate-400 font-medium text-center sm:text-left">
+          <div className="pt-6 text-center text-xs text-slate-500 dark:text-slate-400 font-medium">
             <p>
               © {new Date().getFullYear()} Lakkshanya Suresh. All rights reserved.
-            </p>
-            <p className="flex items-center gap-1.5 justify-center">
-              <span>Crafted with</span>
-              <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500 animate-pulse" />
-              <span>using React, Tailwind CSS & Framer Motion</span>
             </p>
           </div>
         </div>
